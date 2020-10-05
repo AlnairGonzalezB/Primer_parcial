@@ -8,7 +8,12 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <table>
+    <audio id = 'rola' src="mos-eisley-cantina-song.mp3" ></audio>
+    <center> 
+        <h1>Mos eisly cantina
+            <button onclick="document.getElementById('rola').play()">Rolona</button>
+        </h1>
+        <table>
         <thead>
             <tr>
                 <td>Mesa 1</td>
@@ -18,14 +23,26 @@
         </thead>
         <tbody>
             <tr>
-                <td> <img src="img/billardOff.jpg" id="mesa 1" onclick="activarMesa('mesa 1','Tmesa 1');"> </td>
-                <td> <img src="img/billardOff.jpg" id="mesa 2" onclick="activarMesa('mesa 2','Tmesa 2');"> </td>
-                <td> <img src="img/billardOff.jpg" id="mesa 3" onclick="activarMesa('mesa 3','Tmesa 3');"> </td>
+                <td> <img src="img/billardOff.jpg" id="mesa 1" onclick="activarMesa('mesa 1','Imesa 1', 'Tmesa 1', 'Cmesa 1');"> </td>
+                <td> <img src="img/billardOff.jpg" id="mesa 2" onclick="activarMesa('mesa 2','Imesa 2', 'Tmesa 2', 'Cmesa 2');"> </td>
+                <td> <img src="img/billardOff.jpg" id="mesa 3" onclick="activarMesa('mesa 3','Imesa 3', 'Tmesa 3', 'Cmesa 3');"> </td>
             <tr>
             <tr>
-                <td id="Tmesa 1">Tiempo:</td>
-                <td id="Tmesa 2">Tiempo:</td>
-                <td id="Tmesa 3">Tiempo:</td>
+                <td>
+                    <p id="Imesa 1">Hora inicio: </p>
+                    <p id="Tmesa 1">Tiempo: </p>
+                    <p id="Cmesa 1">Costo: </p>
+                </td>
+                <td>
+                    <p id="Imesa 2">Hora inicio: </p>
+                    <p id="Tmesa 2">Tiempo: </p>
+                    <p id="Cmesa 2">Costo: </p>
+                </td>
+                <td>
+                    <p id="Imesa 3">Hora inicio: </p>
+                    <p id="Tmesa 3">Tiempo: </p>
+                    <p id="Cmesa 3">Costo: </p>
+                </td>
             <tr>
                 <td>Mesa 4</td>
                 <td>Mesa 5</td>
@@ -33,16 +50,28 @@
             <tr>
     
             <tr>
-                <td> <img src="img/billardOff.jpg" id="mesa 4" onclick="activarMesa('mesa 4','Tmesa 4');"> </td>
-                <td> <img src="img/billardOff.jpg" id="mesa 5" onclick="activarMesa('mesa 5','Tmesa 5');"> </td>
-                <td> <img src="img/billardOff.jpg" id="mesa 6" onclick="activarMesa('mesa 6','Tmesa 6');"> </td>
+                <td> <img src="img/billardOff.jpg" id="mesa 4" onclick="activarMesa('mesa 4','Imesa 4', 'Tmesa 4', 'Cmesa 4');"> </td>
+                <td> <img src="img/billardOff.jpg" id="mesa 5" onclick="activarMesa('mesa 5','Imesa 5', 'Tmesa 5', 'Cmesa 5');"> </td>
+                <td> <img src="img/billardOff.jpg" id="mesa 6" onclick="activarMesa('mesa 6','Imesa 6', 'Tmesa 6', 'Cmesa 6');"> </td>
             <tr>
             <tr>
-                <td id="Tmesa 4">Tiempo:</td>
-                <td id="Tmesa 5">Tiempo:</td>
-                <td id="Tmesa 6">Tiempo:</td>
+                <td>
+                    <p id="Imesa 4">Hora inicio: </p>
+                    <p id="Tmesa 4">Tiempo: </p>
+                    <p id="Cmesa 4">Costo: </p>
+                </td>
+                <td>
+                    </p> <p id="Imesa 5">Hora inicio: </p>
+                    <p id="Tmesa 5">Tiempo: </p>
+                    <p id="Cmesa 5">Costo: </p>
+                </td>
+                <td>
+                    <p id="Imesa 6">Hora inicio: </p>
+                    <p id="Tmesa 6">Tiempo: </p>
+                    <p id="Cmesa 6">Costo: </p>
+                </td>
         </tbody>
     </table>
-
+    </center>
 </body>
 </html>
