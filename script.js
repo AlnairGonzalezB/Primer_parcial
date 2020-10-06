@@ -38,5 +38,6 @@ const timer = (numeroMesa, tMesa, cMesa) =>{
 }
 
 const check = (time, cMesa) =>{
-    document.getElementById(cMesa).innerHTML="Costo: "+ ((time*0.0139)-0.0139)+" Pesos";
+    var costo = (time*0.000277778)*50
+    document.getElementById(cMesa).innerHTML="Costo: "+ costo.toFixed(3); +" creditos";
 }
